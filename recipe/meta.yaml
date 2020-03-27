@@ -1,4 +1,4 @@
-{% set version = "0.1.3" %}
+{% set version = "0.1.4" %}
 
 package:
   name: xcube_geodb
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/dcs4cop/xcube-geodb/archive/v{{ version }}.tar.gz
-  sha256: d8f66264f36cd3a60d7ef270ecbeafb17ce322294203297be505fcb8bd590ddb
+  sha256: 829ea3c18b26954887076c442a140fbfd926076f49d38cb7ff883d40f3321aa7
 
 build:
   number: 0
