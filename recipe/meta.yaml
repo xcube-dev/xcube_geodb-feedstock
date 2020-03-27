@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/dcs4cop/xcube-geodb/archive/v{{ version }}.tar.gz
-  sha256: e829935b3f9a9106e411ac7b513119da23b4dc9441d86b75cf71f0229a9e1d3d
+  sha256: 829ea3c18b26954887076c442a140fbfd926076f49d38cb7ff883d40f3321aa7
 
 build:
   number: 0
