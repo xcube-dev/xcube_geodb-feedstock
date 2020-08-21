@@ -5,7 +5,7 @@ Home: https://github.com/dcs4cop/xcube-geodb
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: geodb is a Python package
 
