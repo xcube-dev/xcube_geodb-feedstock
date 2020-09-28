@@ -1,4 +1,4 @@
-{% set version = "0.1.8" %}
+{% set version = "0.1.9" %}
 
 
 package:
@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/dcs4cop/xcube-geodb/archive/v{{ version }}.tar.gz
-  sha256: 8ac325c7bb88f2c0da5e97a70f9baf7397219aa86dcf847ef82afcbaff27bc4f
+  url: https://github.com/dcs4cop/xcube-geodb/archive/{{ version }}.tar.gz
+  sha256: 2be22df1bdf07f306934085d2cdc6cf9ca31b3ce06d277c9a168cb3d0c26e6e2
 
 build:
   number: 1
@@ -23,14 +23,13 @@ requirements:
   run:
     - python >=3.6
     - pip
-    - xcube >=0.3.0
+    - xcube >=0.5.1
     - geopandas >=0.5
     - matplotlib-base
     - descartes
     - requests
     - sphinx
     - python-dotenv
-    - jupyterlab
 
 test:
   imports:
