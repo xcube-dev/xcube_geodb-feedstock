@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/dcs4cop/xcube-geodb/archive/v{{ version }}.tar.gz
+  url: https://github.com/dcs4cop/xcube-geodb/archive/{{ version }}.tar.gz
   sha256: 2be22df1bdf07f306934085d2cdc6cf9ca31b3ce06d277c9a168cb3d0c26e6e2
 
 build:
