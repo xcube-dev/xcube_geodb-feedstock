@@ -30,6 +30,9 @@ requirements:
     - requests
     - sphinx
     - python-dotenv
+    - shapely
+    - pandas
+    - click
 
 test:
   imports:
