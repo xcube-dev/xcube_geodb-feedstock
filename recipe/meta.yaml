@@ -1,4 +1,4 @@
-{% set version = "0.1.9" %}
+{% set version = "0.1.10" %}
 
 
 package:
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/dcs4cop/xcube-geodb/archive/{{ version }}.tar.gz
-  sha256: 3fc673cd051bbd3e65934c2e7a460425287e43c76c2a9df4ade9224575ee6189
+  sha256: 8d3a4caf94879c4d876e36b87919f6b4fd3635cf1a3bb21933170f7941acba91
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -30,6 +30,9 @@ requirements:
     - requests
     - sphinx
     - python-dotenv
+    - shapely
+    - pandas
+    - click
 
 test:
   imports:
