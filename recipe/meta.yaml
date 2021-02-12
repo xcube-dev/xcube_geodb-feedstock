@@ -1,4 +1,4 @@
-{% set version = "0.1.9" %}
+{% set version = "0.1.12" %}
 
 
 package:
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/dcs4cop/xcube-geodb/archive/{{ version }}.tar.gz
-  sha256: 3fc673cd051bbd3e65934c2e7a460425287e43c76c2a9df4ade9224575ee6189
+  sha256: affbfb037b69d1b3e4dc023597a34b5a71e4ed043d2cc56805f4b7ca758606ae
 
 build:
-  number: 2
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - geodb = xcube_geodb.cli.main:main
 
@@ -30,18 +30,21 @@ requirements:
     - requests
     - sphinx
     - python-dotenv
+    - shapely
+    - pandas
+    - click
 
 test:
   imports:
     - xcube_geodb.core.geodb
 
 about:
-  summary: "geodb is a Python package"
+  summary: geodb is a Python package
   home: https://github.com/dcs4cop/xcube-geodb
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  description: "geodb is a Python package"
+  description: geodb is a Python package
   doc_url: https://xcube_geodb.readthedocs.io
   dev_url: https://github.com/dcs4cop/xcube-geodb
 
