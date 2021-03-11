@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/dcs4cop/xcube-geodb/archive/v{{ version }}.tar.gz
-  sha256: fc5fd4e95c51c498db99e3d31c64a43bed97853c2d5dc4386f56cdee89b41405
+  sha256: 425d34d2a4bf2be811663aa3d490ad2629589039231cc0bb154505ad49ebae6c
 
 build:
   number: 0
@@ -23,12 +23,10 @@ requirements:
   run:
     - python >=3.6
     - pip
-    - xcube >=0.5.1
     - geopandas >=0.5
     - matplotlib-base
     - descartes
     - requests
-    - sphinx
     - python-dotenv
     - shapely
     - pandas
