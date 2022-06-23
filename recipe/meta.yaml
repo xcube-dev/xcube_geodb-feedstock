@@ -21,15 +21,16 @@ requirements:
     - python >=3.6
     - pip
   run:
-   - pip
-   - geopandas
-   - matplotlib-base
-   - descartes
-   - psycopg2
-   - requests
-   - ipyleaflet
-   - python-fastjsonschema
-   - python-dotenv
+    - python >=3.6
+    - pip
+    - geopandas
+    - matplotlib-base
+    - descartes
+    - psycopg2
+    - requests
+    - ipyleaflet
+    - python-fastjsonschema
+    - python-dotenv
 
 test:
   imports:
