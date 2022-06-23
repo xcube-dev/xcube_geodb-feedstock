@@ -1,4 +1,4 @@
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
 
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/dcs4cop/xcube-geodb/archive/v{{ version }}.tar.gz
-  sha256: f61eeecb68135a881539fe1c1061208c7c165ea0a103ff1a7bc0e2256cc35327
+  sha256: C13C7103C63495D8D9A29C6A65E617C08073F6383021FB53DAC3A945E8C28329
 
 build:
   number: 0
@@ -23,14 +23,14 @@ requirements:
   run:
     - python >=3.6
     - pip
-    - geopandas >=0.5
+    - geopandas
     - matplotlib-base
     - descartes
+    - psycopg2
     - requests
+    - ipyleaflet
+    - python-fastjsonschema
     - python-dotenv
-    - shapely
-    - pandas
-    - click
 
 test:
   imports:
