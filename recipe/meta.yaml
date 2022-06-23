@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/dcs4cop/xcube-geodb/archive/v{{ version }}.tar.gz
-  sha256: C13C7103C63495D8D9A29C6A65E617C08073F6383021FB53DAC3A945E8C28329
+  sha256: c13c7103c63495d8d9a29c6a65e617c08073f6383021fb53dac3a945e8c28329
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -49,7 +49,6 @@ about:
 extra:
   recipe-maintainers:
     - pont-us
-    - dzelge
     - TonioF
     - forman
     - AliceBalfanz
