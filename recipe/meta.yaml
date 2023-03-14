@@ -27,7 +27,7 @@ requirements:
     - psycopg2
     - requests
     - ipyleaflet
-  
+
 test:
   imports:
     - xcube_geodb.core.geodb
