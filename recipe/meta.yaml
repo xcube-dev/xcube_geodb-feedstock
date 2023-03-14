@@ -27,6 +27,7 @@ requirements:
     - psycopg2
     - requests
     - ipyleaflet
+    - python-dotenv
 
 test:
   imports:
