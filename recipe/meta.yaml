@@ -24,9 +24,12 @@ requirements:
     - python >=3.6
     - pip
     - geopandas
+    - matplotlib-base
     - psycopg2
+    - postgis
     - requests
     - ipyleaflet
+    - python-fastjsonschema
     - python-dotenv
 
 test:
@@ -50,3 +53,4 @@ extra:
     - forman
     - AliceBalfanz
     - thomasstorm
+    - TejasMorbagal
