@@ -23,14 +23,12 @@ requirements:
   run:
     - python >=3.6
     - geopandas
-    - ipyleaflet
-    - matplotlib-base
+    - pandas
     - pip
     - psycopg2
     - python-dotenv
-    - python-fastjsonschema
-    - python-keycloak
     - requests
+    - shapely
 
 test:
   imports:
