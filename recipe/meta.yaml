@@ -10,7 +10,7 @@ source:
   sha256: 73d672e7dc73dffc1cf726733f99b51f7cdf088739f98acd0cca123ab5e06460
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -18,10 +18,10 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - geopandas
     - pandas
     - pip
@@ -31,6 +31,8 @@ requirements:
     - shapely
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - xcube_geodb.core.geodb
 
